@@ -1,13 +1,14 @@
 Degrees of Separation
+
 This project finds the shortest connection (in terms of shared movies) between two actors/actresses using breadth-first search (BFS). It's inspired by the concept of "Six Degrees of Kevin Bacon", where any actor can be linked to Kevin Bacon through six or fewer film collaborations.
 
-📁 Dataset Structure
+Dataset Structure
 The project expects a folder (large/ or small/) containing 3 CSV files:
 people.csv: Information about each person (id, name, birth year)
 movies.csv: Information about each movie (id, title, year)
 stars.csv: Links people to the movies they've starred in (movie_id, person_id)
 
-🚀 How It Works
+How It Works
 Loads and parses CSV files into memory.
 Builds mappings between people and the movies they've acted in.
 Uses Breadth-First Search (BFS) to find the shortest path between two actors, where:
